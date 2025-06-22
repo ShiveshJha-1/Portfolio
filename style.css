@@ -154,15 +154,71 @@ footer {
     background: #F8F9FA;
     margin-top: 2rem;
 }
-@media (max-width: 700px) {
-    nav ul {
-        gap: 1rem;
-    }
-    .landing-content h1 {
-        font-size: 2rem;
+@media (max-width: 900px) {
+    nav {
+        padding: 1rem 1rem;
     }
     .section {
-        padding: 2rem 1rem;
+        padding: 2.5rem 1rem;
+    }
+    .portfolio-items, .product-list, .work-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 700px) {
+    nav ul {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+    .landing-content h1 {
+        font-size: 1.5rem;
+    }
+    .section {
+        padding: 1.5rem 0.5rem;
+    }
+    .portfolio-items, .product-list, .work-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .item-img {
+        max-width: 100%;
+        height: 140px;
+    }
+    .contact-form {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .section h2 {
+        font-size: 1.3rem;
+    }
+    .cta-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+/* Optional: Make nav menu collapsible for mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.2rem;
+        margin-top: 0.5rem;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 0.7rem 0;
     }
 }
 .icon-link {
