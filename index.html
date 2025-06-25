@@ -11,7 +11,12 @@
     <header>
         <nav>
             <div class="logo">Shivesh Jha</div>
-            <ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="nav-menu">
                 <li><a href="#landing">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#products">Products</a></li>
@@ -125,5 +130,9 @@
     <footer>
         <p>&copy; 2024 Shivesh Jha. All rights reserved.</p>
     </footer>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </body>
 </html> 
